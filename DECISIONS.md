@@ -88,6 +88,41 @@ approval of that commit scope).
 **Note:** Monty operating Claude Code locally softens the strict no-local-files constraint
 to "nothing lives outside Drive/GitHub"; where the *pipeline* physically runs remains open (O7).
 
+### D9 — Demand-stage identification: both designs (2026-07-16, resolves O1)
+**Decision:** Run both — (b) event study around the Feb 2022 Ukraine invasion as the
+headline specification, and (a) user FE + time FE panel with GPR country×month as the
+supporting/robustness design. Survival share contrasted against cozy games as the
+theoretically motivated control genre (escapism literature makes the genre contrast
+non-optional: general escapism predicts all-genre rise; benign masochism predicts
+reallocation toward survival).
+**Location proxy strategy (tiered):**
+- Review language is the assignment variable; restrict or tier by mapping quality:
+  languages with clean 1:1 country mapping (e.g., Polish, German, Turkish, Korean,
+  Japanese, Finnish, Ukrainian, Russian) form the clean analysis set; English pools many
+  countries and is either excluded or treated as a population-weighted aggregate exposure.
+- loccountrycode (public profiles only) used as validation subsample, not primary
+  assignment (selection + self-report staleness).
+- Measurement-error direction noted: classical misassignment attenuates toward zero
+  (conservative); non-classical channels (strategic language switching post-2022) flagged
+  for diagnostics.
+**Mechanism honesty (from lit review):** benign masochism (Rozin) and simulation/practice
+(Scrivner et al. 2021) are observationally equivalent in this design; the paper tests the
+demand response and stays agnostic between micro-mechanisms unless review-text analysis
+separates pleasure-language from preparation-language.
+
+### D10 — Doom operationalization: GPR primary, others as separate robustness (2026-07-16, resolves O2)
+**Decision:** Caldara–Iacoviello GPR (monthly, country-specific, 1985+, free) as primary
+doom measure. OECD Consumer Confidence and Google Trends anxiety terms as robustness —
+reported as separate specifications (one index per column), NOT blended into a composite.
+**Rationale on composites (recorded for methods section):** averaging standardized indices
+reduces noise only when components measure the same latent construct with independent
+errors; GPR / CCI / Trends measure different doom flavors (geopolitical, economic, health/
+general anxiety), so a composite blurs constructs and invites weight-choice criticism.
+Separate columns are more informative (show which doom flavor drives results). If a single
+number is ever needed, a pre-specified z-score average goes in an appendix only.
+**Google Trends caveat:** term list is a researcher degree of freedom — pre-specify before
+estimation.
+
 ---
 
 ## Open
@@ -103,11 +138,13 @@ Candidates on the table:
 Falsification requirement: cozy games as theoretically motivated control genre (comfort-coping
 predicts the opposite allocation — this is what makes the theory falsifiable).
 **Status:** Awaiting Monty's call, including comfort with the coarse location proxy.
+**Resolved:** by D9 (2026-07-16) — both designs: (b) headline, (a) supporting.
 
 ### O2 — Operationalization of "global doom"
 Candidates: Geopolitical Risk Index (Caldara & Iacoviello), consumer confidence indices,
 country-level Google Trends anxiety terms, survey-based anxiety prevalence.
 Choice interacts with O1 (needs country×time variation for design (a)).
+**Resolved:** by D10 (2026-07-16) — GPR primary; CCI and Trends as separate robustness columns.
 
 ### O3 — Supply-stage design
 Candidates:
@@ -137,3 +174,13 @@ tooling (targets?).
 Claude Code runs locally, which puts data transiently on the laptop — in tension with the
 no-local-files constraint. Options: (a) GitHub Actions runs the pipeline on schedule,
 Claude Code only authors code; (b) accept transient local runs.
+
+### O8 — Feb 2022 event study: exposure groups & the Russia payment confound (new)
+The invasion shock hits Russian users through a second channel: sanctions and payment
+disruptions (Visa/Mastercard exit, Steam payment friction) mechanically suppressed Russian
+purchases — confounding doom with ability to buy. Options to settle before the brief:
+(a) define treated groups as high-threat-perception, no-payment-friction languages
+(Polish, Finnish, Baltic, German) vs. low-exposure controls (e.g., Japanese, Spanish,
+Portuguese-BR); (b) for Russian/Ukrainian users, use engagement with already-owned games
+(review timing, playtime) rather than new acquisition; (c) drop RU/UA from the treated set
+entirely and treat them as a separate descriptive case. Monty to decide at brief-writing.
