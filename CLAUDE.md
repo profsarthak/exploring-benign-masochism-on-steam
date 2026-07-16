@@ -16,6 +16,8 @@ doing anything.
    Challenge approaches that look flawed, with reasons, in plain language.
 5. **Small verifiable steps.** Add checks/diagnostics when logic changes. Prefer readable
    simplicity over cleverness.
+6. **Keep the sIfA log current.** Update AI_USAGE.md (sIfA log) whenever AI's role in a
+   CRediT category changes, and append a session entry after each working session.
 
 ## Sources of truth
 

@@ -123,6 +123,21 @@ number is ever needed, a pre-specified z-score average goes in an appendix only.
 **Google Trends caveat:** term list is a researcher degree of freedom — pre-specify before
 estimation.
 
+### D11 — AI-usage transparency via sIfA (2026-07-16)
+**Decision:** Adopt the Busara Center's sIfA (Statement of Intellectual Fellowship and
+Accountability) as the project's AI-transparency instrument, maintained as AI_USAGE.md in the
+repo root alongside DECISIONS.md. Structure: CRediT's 14 contributor roles rated
+zero/light/extensive with explanations and audit trails; no numeric scoring (per sIfA design
+philosophy); living document updated each session from project start.
+**Rationale:** Empirically defensible work (D2) increasingly includes AI-use disclosure;
+sIfA is open-source, built on the familiar CRediT taxonomy, and designed for exactly this
+kind of ongoing human–AI research collaboration. Starting in week one avoids end-of-project
+reconstruction, which sIfA's designers warn against.
+**Maintenance rule (also added to CLAUDE.md by Code):** update AI_USAGE.md whenever AI's role
+in a CRediT category changes; append a session entry after each working session.
+**References:** https://busara.global/our-works/the-sifa-tool-for-a-statement-of-intellectual-fellowship-and-accountability/ ;
+https://onthinktanks.org/articles/knowledge-creation-in-the-age-of-ai/ ; https://credit.niso.org/
+
 ---
 
 ## Open
