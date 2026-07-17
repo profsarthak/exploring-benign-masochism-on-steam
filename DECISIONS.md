@@ -138,6 +138,21 @@ in a CRediT category changes; append a session entry after each working session.
 **References:** https://busara.global/our-works/the-sifa-tool-for-a-statement-of-intellectual-fellowship-and-accountability/ ;
 https://onthinktanks.org/articles/knowledge-creation-in-the-age-of-ai/ ; https://credit.niso.org/
 
+### D12 — Literature corpus, naming convention, and reading workflow (2026-07-16)
+**Decision:**
+- Citation-key naming convention for all sources: `AuthorYear_ShortTitle.pdf`
+  (disambiguation rule in force: `YeeSng2022` = Andrew Z.H. Yee & Sng; `Yee2006` = Nick Yee).
+- Reading tracked in a synthesis-matrix Google Sheet (litreview_matrix, Drive/Lit Review):
+  one row per source with findings in own words, limitations, and relevance tagged to
+  decision-log entries; plus a paper×theme synthesis tab. Prose drafts in Drive
+  (Literature Review.gdoc) per D7 sources-of-truth split.
+- Corpus status: 12 PDFs acquired (buckets A–E); 2 requested from authors (escapism/COVID
+  papers, bucket B); supply-stage (F) and Steam-methods (G) sweeps deliberately deferred
+  until after the first reading pass.
+**Gate:** Brief 01 (demand-stage pilot) is written only after Monty's reading pass — the
+Scrivner et al. full text already shows outcome-specific pathways (distress vs. resilience
+vs. preparedness) that should inform how the demand-stage outcome is specified.
+
 ---
 
 ## Open

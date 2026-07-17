@@ -48,6 +48,15 @@ repo scaffolded and pushed; first-pass lit sweep and acquisition map; sIfA log a
 AI use this session: methodology sparring, literature search/retrieval, documentation
 authoring, repo scaffolding. All decisions Monty's; full reasoning in DECISIONS.md.
 
+### 2026-07-16 — Session 3 (Cowork): literature acquisition & tracking infrastructure
+Lit sweep executed by AI (search, open-access retrieval, full-text extraction of
+Pérez-Latorre 2019, Rozin 2013, Scrivner et al. 2021); 12 uploaded PDFs identified and
+renamed to citation convention via Drive connector; synthesis-matrix tracker built
+(xlsx via openpyxl + verified Google Sheet; one corrupted upload caught by read-back
+verification and discarded). sIfA adopted and logged (D11). CRediT deltas: Investigation
+remains Extensive; Project administration remains Extensive; no change elsewhere —
+reading and synthesis of the literature is Monty's (human) task, by design.
+
 ### Meta-disclosure
 This sIfA log itself was drafted by AI (Cowork) from Busara's published descriptions of the
 tool, and reviewed by Monty — consistent with sIfA's own suggestion that AI may assist in
