@@ -16,8 +16,10 @@ Two separately identified stages, chained narratively (see `DECISIONS.md`, D4–
 a full-chain IV was rejected):
 
 1. **Demand stage** — does doom shift consumption? Individual-level outcome: within-user
-   survival review share, built from Steam's public review endpoint. Identification
-   strategy under discussion (DECISIONS.md, O1–O2).
+   survival review share, built from Steam's public review endpoint. Identification: Feb 2022
+   Ukraine-invasion event study (headline) plus a user-FE / time-FE panel with the
+   Caldara–Iacoviello GPR index (support), survival share contrasted against cozy games as
+   the control genre (DECISIONS.md, D9–D10).
 2. **Supply stage** — does success drive entry? Genre-level panel and/or breakout-hit
    event studies (DECISIONS.md, O3).
 
@@ -27,6 +29,7 @@ a full-chain IV was rejected):
 ├── README.md          # this file
 ├── DECISIONS.md       # append-only decision log (design choices + rationale)
 ├── CLAUDE.md          # working rules for AI-assisted sessions
+├── AI_USAGE.md        # sIfA AI-transparency log (CRediT roles + session log)
 ├── briefs/            # implementation briefs: one spec per analysis task
 ├── data/
 │   ├── raw/           # as-pulled API data (see data/README.md for size rules)
