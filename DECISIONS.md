@@ -153,6 +153,19 @@ https://onthinktanks.org/articles/knowledge-creation-in-the-age-of-ai/ ; https:/
 Scrivner et al. full text already shows outcome-specific pathways (distress vs. resilience
 vs. preparedness) that should inform how the demand-stage outcome is specified.
 
+### D13 — First-pass literature matrix delegated to AI (2026-10-23; amends D12 workflow)
+**Decision:** Monty directed Claude Code to complete the first pass of litreview_matrix
+(every empty Papers cell in columns I–N, plus the whole Synthesis tab) from the full texts of
+all 15 sources, with no AI markers inside the sheet. Cell-level authorship is recorded in
+AI_USAGE.md (Session 4) instead. Status/Priority columns keep tracking Monty's own reading.
+**Alternatives offered at the time:** (a) fill everything with in-cell AI markers;
+(b) AI fills only extraction columns (purpose, method, limitations, quotes) and leaves
+findings, relevance and synthesis to Monty; (c) fill everything without markers (chosen).
+**Rationale:** Monty's instruction; no further rationale was recorded in the session.
+**Open consequence:** D12's gate says Brief 01 waits for "Monty's reading pass". Whether
+Monty's review of the AI-drafted matrix satisfies that gate is not decided here.
+**Corpus update (amends D12 status):** 15 PDFs (F1, F2, G1 added Aug 2026).
+
 ---
 
 ## Open
@@ -214,3 +227,16 @@ purchases — confounding doom with ability to buy. Options to settle before the
 Portuguese-BR); (b) for Russian/Ukrainian users, use engagement with already-owned games
 (review timing, playtime) rather than new acquisition; (c) drop RU/UA from the treated set
 entirely and treat them as a separate descriptive case. Monty to decide at brief-writing.
+
+### O9 — Country GPR reflects US-press attention, not local doom (new, 2026-10-23)
+Found in the full text of Caldara & Iacoviello (2022): country-specific GPR indices count
+articles in three US newspapers that pair geopolitical terms with a country's name, and
+"capture the US perspective on risks posed by, or involving, the country" (p. 1208).
+Implications: (a) the index proxies US-press salience, not residents' perceived threat;
+(b) an aggressor (Russia, 2022) and a threatened neighbour both spike, so country GPR alone
+cannot rank O8 exposure groups; (c) a US-centred English-language source sits awkwardly
+with language-based user assignment (D9). Options to weigh before Brief 01: (i) keep
+country GPR and state the caveat; (ii) use global GPR or its threats sub-index (GPT)
+interacted with a predetermined geographic exposure (e.g., proximity to the conflict);
+(iii) lean more on locally sourced robustness measures already in D10 (country Google
+Trends, OECD CCI); (iv) a combination. Does not reverse D10. Monty to decide.

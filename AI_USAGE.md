@@ -21,7 +21,7 @@ documentation); Claude Code (repo execution, R pipeline authoring). Referred to 
 
 ## CRediT role log
 
-Last updated: 2026-07-16 (project pre-data phase)
+Last updated: 2026-10-23 (project pre-data phase)
 
 | CRediT role | AI use | Explanation & audit trail |
 |---|---|---|
@@ -30,7 +30,7 @@ Last updated: 2026-07-16 (project pre-data phase)
 | Software | **Not yet — anticipated Extensive** | R pipeline will be authored primarily by Code from human-approved briefs (briefs/). Audit: git history, brief-to-script mapping. |
 | Validation | **Not yet — anticipated Light/Extensive** | Planned: AI-run diagnostics specified in briefs; human review of all results before acceptance. To be updated when analysis begins. |
 | Formal analysis | **Not yet** | Estimation not begun. Specifications will be fixed in briefs before execution. |
-| Investigation | **Extensive** | Literature search and retrieval performed by Cowork (web search, open-access fetching); source verification flags maintained. Feasibility probes of Steam API endpoints by Cowork. Audit: Lit Review/Reading List & Acquisition Map.md; annotated bibliography. |
+| Investigation | **Extensive** | Literature search and retrieval performed by Cowork (web search, open-access fetching); source verification flags maintained. Feasibility probes of Steam API endpoints by Cowork. Since 2026-10-23 also the first-pass reading: Code extracted and synthesized all 15 sources into litreview_matrix at Monty's direction (cell-level record in the Session 4 entry below). Audit: Lit Review/Reading List & Acquisition Map.md; annotated bibliography; litreview_matrix version history. |
 | Resources | **Light** | Cowork identified data sources (Steam review endpoint, GPR index, OECD CCI); Monty selected among them (D10). |
 | Data curation | **Not yet — anticipated Extensive** | Scrape and cleaning pipeline to be AI-authored per data rules in CLAUDE.md; provenance entries in data/README.md required at creation. |
 | Writing — original draft | **Not yet** | Policy: to be logged when drafting begins; prose deliverables live in Drive (Write-ups/). |
@@ -56,6 +56,25 @@ renamed to citation convention via Drive connector; synthesis-matrix tracker bui
 verification and discarded). sIfA adopted and logged (D11). CRediT deltas: Investigation
 remains Extensive; Project administration remains Extensive; no change elsewhere —
 reading and synthesis of the literature is Monty's (human) task, by design.
+
+### 2026-10-23 — Session 4 (Code): literature matrix first pass
+At Monty's direction ("finish filling in my lit review sheet"), Code read the full text of all
+15 PDFs and filled every empty cell in litreview_matrix. Monty chose to have no AI markers
+inside the sheet, so this entry is the authorship record:
+- **AI-written (this session):** Papers tab columns I–N for Yee2006, Melodia2022,
+  PerezLatorre2019a/b, Farca2016, Aarseth2013, Juul2017, YeeSng2022, Caldara2022,
+  BresnahanReiss1991, BerryReiss2006, ONeill2016; columns M–N for Rozin2013 and Cahill2025
+  (76 cells; quotes carry page numbers); Link/DOI for 4 rows; all Synthesis-tab cells except
+  Scrivner2021's two (133 cells; "—" means not addressed).
+- **AI-written earlier:** the Scrivner2021 worked example (Session 3).
+- **Human-written:** Rozin2013 and Cahill2025 columns I–L.
+- **Corrections:** shifted metadata in the BerryReiss2006 and ONeill2016 rows (authors, year,
+  title, venue); citations verified for Bresnahan & Reiss 1991, Berry & Reiss 2007, Backe &
+  Aarseth 2013 and O'Neill et al. 2016. Status/Priority columns left for Monty.
+
+CRediT deltas: Investigation stays Extensive but now covers first-pass reading, extraction
+and synthesis notes. This supersedes the Session 3 note that reading and synthesis would be
+human-only (see DECISIONS.md D13). No change elsewhere.
 
 ### Meta-disclosure
 This sIfA log itself was drafted by AI (Cowork) from Busara's published descriptions of the
