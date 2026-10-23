@@ -166,6 +166,48 @@ findings, relevance and synthesis to Monty; (c) fill everything without markers 
 Monty's review of the AI-drafted matrix satisfies that gate is not decided here.
 **Corpus update (amends D12 status):** 15 PDFs (F1, F2, G1 added Aug 2026).
 
+### D14 — Brief-01 gate defined; corpus housekeeping (2026-10-23; settles the D13 gate question)
+**Decision (gate):** D12's Brief-01 gate is met once Monty has personally read Caldara2022
+and YeeSng2022 and finished Cahill2025 (Rozin2013 and Scrivner2021 are already read), and has
+reviewed the AI-drafted matrix rows for the remaining sources.
+**Rationale:** these are the sources that shape Brief 01 directly: Caldara is the doom
+measure (see D15), Yee & Sng the cozy control, Cahill the escapism rival, and Scrivner's
+outcome pathways were the original reason for the gate. The rest inform background and the
+supply stage.
+**Alternatives considered:** (a) reviewing the AI-drafted matrix alone satisfies the gate;
+(c) Monty reads all sources before Brief 01.
+**Decision (housekeeping):**
+- Cite keys and PDF names conformed to the D12 convention: Aarseth2013 → Backe2013 (first
+  author is Backe); BerryReiss2006 → BerryReiss2007 (cite the published Handbook chapter;
+  the PDF on file is the 2006 "do not cite" draft); BresReiss1991.pdf →
+  BresnahanReiss1991_...; ONeill2016.pdf given its short title.
+- Juul2017 dropped from the corpus: it is about the scholarly framing of game culture, not
+  darker content or player demand, so it is not evidence for D1. PDF kept on file, uncited.
+  The matrix now holds 14 sources.
+
+### D15 — Country-GPR caveat: state it, lean on local measures, add a proximity check (2026-10-23, resolves O9)
+**Decision:** Keep country GPR as specified in D10 and state its limitation explicitly (O9
+option i). Give more weight to the locally sourced measures already in D10, country Google
+Trends and OECD CCI (option iii). Add a predetermined, proximity-based exposure definition
+(option ii, e.g. distance to the conflict, fixed before Feb 2022) as one robustness check,
+not as a main measure.
+**Rationale:** the headline event study (D9) times the shock by the invasion itself and does
+not rely on country GPR, so the caveat mainly affects the supporting panel. Options (i) and
+(iii) use data already planned in D10 and avoid hand-picking exposed countries; the proximity
+check answers the objection that every continuous measure reacts to the same events.
+**Counter-case recorded (for the methods section):** country GPR measures US-press
+attention and mis-ranks exposure (aggressor vs. threatened neighbour), so its error is not
+classical and D9's "misassignment attenuates toward zero" argument does not cover it.
+Google Trends is weak where Google is not the main search engine (Russia: Yandex; South
+Korea: Naver), is rescaled per country and resampled per download, and needs translated,
+pre-specified terms. OECD CCI measures economic sentiment; in 2022 it moved with inflation
+and energy prices, which hit the near-war countries hardest, and its coverage is mainly
+OECD members. The proximity check has confounds of its own (energy prices, refugee inflows),
+and its exposure rule must be fixed before outcomes are examined.
+**Implementation notes for Brief 01:** pre-specify the Trends term list and translations
+(D10 caveat); treat Russian- and Korean-language Trends series as low-coverage; pre-register
+the proximity rule. O8 (exposure groups and the Russia payment confound) remains open.
+
 ---
 
 ## Open
@@ -240,3 +282,4 @@ country GPR and state the caveat; (ii) use global GPR or its threats sub-index (
 interacted with a predetermined geographic exposure (e.g., proximity to the conflict);
 (iii) lean more on locally sourced robustness measures already in D10 (country Google
 Trends, OECD CCI); (iv) a combination. Does not reverse D10. Monty to decide.
+**Resolved:** by D15 (2026-10-23): (i) + (iii), with (ii) as a robustness check.

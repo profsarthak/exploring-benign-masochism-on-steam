@@ -76,6 +76,15 @@ CRediT deltas: Investigation stays Extensive but now covers first-pass reading, 
 and synthesis notes. This supersedes the Session 3 note that reading and synthesis would be
 human-only (see DECISIONS.md D13). No change elsewhere.
 
+### 2026-10-23 — Session 4, continued (Code): decisions and corpus housekeeping
+At Monty's request Code explained the open decisions in plain language, with options and
+recommendations, and set out the counter-case to his O9 choice. Monty decided D14 and D15.
+Code then renamed four PDFs through the Drive connector (same file IDs), updated cite keys on
+both matrix tabs (Backe2013, BerryReiss2007; Backe listed as first author), removed one
+sentence made obsolete by the rename (Backe2013 Limitations), and deleted the Juul2017 rows
+from both tabs. CRediT: no change. The decisions are Monty's; the AI work here is
+documentation and project administration.
+
 ### Meta-disclosure
 This sIfA log itself was drafted by AI (Cowork) from Busara's published descriptions of the
 tool, and reviewed by Monty — consistent with sIfA's own suggestion that AI may assist in
