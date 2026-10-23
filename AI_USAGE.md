@@ -85,6 +85,14 @@ sentence made obsolete by the rename (Backe2013 Limitations), and deleted the Ju
 from both tabs. CRediT: no change. The decisions are Monty's; the AI work here is
 documentation and project administration.
 
+### 2026-10-23 — Session 5 (Code): consistency check and O8
+At Monty's request Code ran an internal consistency check of the whole project (repo,
+Drive docs, matrix) against each other, the literature and verified Steam documentation
+(supported languages, review API). Report: Drive root, "Consistency check 2026-10-23.md".
+Code recommended a resolution for O8, which Monty accepted (D16), and set Status to Done
+for the three gate papers at Monty's request. CRediT: no change. Methodology stays
+Extensive (AI proposed the exposure-group rule; Monty decided).
+
 ### Meta-disclosure
 This sIfA log itself was drafted by AI (Cowork) from Busara's published descriptions of the
 tool, and reviewed by Monty — consistent with sIfA's own suggestion that AI may assist in

@@ -208,6 +208,41 @@ and its exposure rule must be fixed before outcomes are examined.
 (D10 caveat); treat Russian- and Korean-language Trends series as low-coverage; pre-register
 the proximity rule. O8 (exposure groups and the Russia payment confound) remains open.
 
+### D16 — Feb 2022 exposure groups; Russian/Ukrainian set aside (2026-10-23, resolves O8; corrects D9's language list)
+**Decision:**
+- **Exposed group (main estimate):** national languages of countries sharing a land border
+  with Russia, Belarus or Ukraine that are Steam-supported languages: Polish, Finnish,
+  Romanian, Hungarian, Norwegian. These users faced the threat, were physically safe, and
+  had no payment disruption. The rule is fixed in advance, as D15 requires.
+- **Comparison groups, two tiers:** primary = Western/Southern European languages (Spanish
+  (Spain), Portuguese, Italian, French, Dutch), which shared the 2022 energy and inflation
+  shock with less direct threat; secondary = distant languages (Japanese, Portuguese-Brazil,
+  Spanish-Latin America, Thai, Vietnamese, Indonesian).
+- **Intermediate languages** (German, Czech, Swedish, Danish, Bulgarian, Greek, Turkish)
+  stay out of the binary contrast and enter the graded-distance robustness check (D15).
+- **Russian and Ukrainian** are excluded from the main estimate (O8 option c) and reported
+  descriptively, using engagement with already-owned games as the measure (option b).
+**Rationale:** (1) the payment shock O8 names; (2) Belarusian and Kazakh are not
+Steam-supported languages, so those players review in Russian, as do many Ukrainians, and
+the Russian-language group mixes countries with opposite exposure; (3) many Ukrainians
+switched from Russian to Ukrainian after the invasion, so group membership moves with the
+treatment; (4) benign masochism requires a safety frame (Rozin 2013), which people in a war
+zone lack. Using Western/Southern Europe as the primary comparison targets the
+energy/inflation confound recorded in D15.
+**Alternatives considered:** O8 option (a) as written. Its "Baltic" group cannot be built,
+because Estonian, Latvian and Lithuanian are not Steam-supported languages (Steamworks
+lists them as game-only). Keeping RU/UA in the treated set was rejected for the reasons
+above.
+**Correction to D9 (supersedes in part):** Russian is not a clean 1:1 language (see
+rationale 2). German pools Germany, Austria and Switzerland; Germany dominates, and German
+now sits in the intermediate tier.
+**Trade-off and fallback:** the treated group is smaller and loses the most intensely
+affected populations. Brief 01 must count active reviewers per language for 2021–2022; if
+the treated group is too thin, the fallback is the graded-distance specification with
+intermediate languages included.
+**Gate status (D14):** met 2026-10-23. Monty has read Caldara2022, YeeSng2022 and
+Cahill2025 and agrees with the matrix synthesis.
+
 ---
 
 ## Open
@@ -269,6 +304,8 @@ purchases — confounding doom with ability to buy. Options to settle before the
 Portuguese-BR); (b) for Russian/Ukrainian users, use engagement with already-owned games
 (review timing, playtime) rather than new acquisition; (c) drop RU/UA from the treated set
 entirely and treat them as a separate descriptive case. Monty to decide at brief-writing.
+**Resolved:** by D16 (2026-10-23): rule-based near-war exposed group, two-tier comparison,
+RU/UA set aside (c) and reported descriptively (b).
 
 ### O9 — Country GPR reflects US-press attention, not local doom (new, 2026-10-23)
 Found in the full text of Caldara & Iacoviello (2022): country-specific GPR indices count
