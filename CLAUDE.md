@@ -39,8 +39,9 @@ doing anything.
   salt lives in `.env`, never in the repo or in logs. No review text in committed data.
 - **No peeking before pre-registration (D21).** Until the analysis plan is registered, do
   not compute survival, cozy or placebo shares, or any genre-split review counts, around
-  Feb 2022. Feasibility work (API behaviour, rate limits, per-language counts, game
-  metadata) is fine.
+  Feb 2022. Total review volume is also an outcome (D18, the escapism row), so no
+  per-language or per-group counts split before/after Feb 2022 either. Feasibility work
+  (API behaviour, rate limits, per-language window totals, game metadata) is fine.
 
 ## Workflow loop
 

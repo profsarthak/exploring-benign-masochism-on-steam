@@ -100,6 +100,13 @@ with a placebo genre, D19 data protection, D20 local pilot, D21 pre-registration
 carried them into CLAUDE.md (data rules), README, data/README and .gitignore. CRediT: no
 change. Methodology stays Extensive (AI proposed; Monty decided).
 
+### 2026-10-24 — Session 5, continued (Code): Brief 01 drafted
+At Monty's request Code drafted Brief 01 (feasibility probe) against the briefs template,
+anchored on D3, D16 and D19–D21. While drafting, Code found that D18's prediction table
+makes total review volume an outcome, so the no-peeking rule in CLAUDE.md was tightened to
+also bar per-language before/after counts (approved by Monty with this commit). CRediT: no
+change yet. Software moves to Extensive when the probe code is written.
+
 ### Meta-disclosure
 This sIfA log itself was drafted by AI (Cowork) from Busara's published descriptions of the
 tool, and reviewed by Monty — consistent with sIfA's own suggestion that AI may assist in
