@@ -243,6 +243,101 @@ intermediate languages included.
 **Gate status (D14):** met 2026-10-23. Monty has read Caldara2022, YeeSng2022 and
 Cahill2025 and agrees with the matrix synthesis.
 
+### D17 — Claim scope (2026-10-24)
+**Decision:** The paper claims only what the design identifies:
+1. After the Feb 2022 invasion, reviewers in threatened-but-safe language groups (D16)
+   shifted their review share toward survival games, relative to the comparison groups and
+   relative to cozy games.
+2. If the supply stage succeeds: survival breakout hits are followed by more survival
+   releases than in comparable genres.
+The full cascade (D1) is argued as an interpretation consistent with these results, not
+claimed as identified. The paper does **not** claim that doom explains the decade-long rise
+in survival releases; that question is the motivation, not a finding.
+**Rationale:** D4 already concedes that doom-trend → release-trend collapses to one trending
+time series and cannot be identified. Overclaiming is the first point a reviewer attacks
+(D2).
+**Alternatives considered:** claiming the full cascade with caveats (rejected: not
+identified); dropping the release-trend question altogether (rejected: it is the
+motivating puzzle).
+**Wording consequence:** README and paper describe the mechanism as dark-content /
+hardship coping, with benign masochism (Rozin) and simulation/practice (Scrivner) as
+candidate explanations, consistent with D9. D1 stands as the motivating hypothesis.
+
+### D18 — Cozy is a rival-prediction genre, not a control; prediction table and placebo genre (2026-10-24; supersedes the "control genre" wording in O1 and D9)
+**Decision:** Survival and cozy review shares are estimated separately, each relative to
+all other genres. Cozy is a rival-prediction genre (comfort coping predicts it rises), not
+a control. The pre-registered prediction table (exposed vs. comparison groups, post vs.
+pre):
+
+| Survival share | Cozy share | Total reviews | Reading |
+|---|---|---|---|
+| up | no change | any | dark-content / hardship coping (benign masochism or simulation) |
+| no change | up | any | comfort coping |
+| up | up | any | both channels (heterogeneous users) |
+| no change | no change | up | general escapism (level effect only) |
+| no change | no change | no change | no detectable response |
+
+A **placebo genre** that no hypothesis predicts will move (e.g. sports or racing; exact
+choice fixed with the genre rule, O4) is added as a check on denominator shocks such as
+Elden Ring's launch on 25 Feb 2022.
+**Rationale:** a control must be unaffected by the treatment. Subtracting a genre that also
+responds can hide a real effect (both rise, so the difference is near zero). The table
+states in advance which results count against the theory.
+**Alternatives considered:** survival-minus-cozy as the headline contrast (rejected for
+that reason).
+
+### D19 — Data protection for a public repo (2026-10-24; amends D7, partly settles O6)
+**Decision:**
+1. Raw pulls never enter the repo (`data/raw/` is gitignored).
+2. Steam IDs are replaced by salted hashes before any data is saved to the repo; the salt
+   is secret and kept outside the repo (e.g. `.env`, already gitignored).
+3. No review text is committed, only variables derived from it.
+4. D7's "data lives in the repo" now means processed, pseudonymised data only.
+Where raw data is stored privately remains part of O6.
+**Rationale:** the repo is public; a Steam ID leads to a public profile; the D16 exposed
+group is entirely EU/EEA, so GDPR applies (a cautious default, not legal advice). Plain
+hashes are reversible because Steam IDs are assigned sequentially from a known base
+(O'Neill et al. 2016), hence the salt. Git history is effectively permanent.
+**Alternatives considered:** plain (unsalted) hashing (rejected: reversible); making the
+repo private (not chosen in this session).
+**Cost:** outsiders cannot re-link records to accounts, by design; replication runs through
+the published scraping and hashing code.
+
+### D20 — The Brief 01 pilot runs locally (2026-10-24; partly settles O7)
+**Decision:** The pilot runs on Monty's laptop as a short-lived local run. Raw files stay in
+the gitignored `data/raw/` and are deleted or moved to private storage afterward. Scripts
+are written so the same R code can later run on GitHub Actions. Where the full pull runs is
+decided after the pilot, using its measured timings and sizes.
+**Rationale:** the pilot is small and interactive (watching rate limits and errors);
+debugging on Actions is slow; Actions logs on a public repo are public, so a careless log
+line could leak identifiers. Consistent with D8's allowance for transient local runs.
+**Alternatives considered:** running the pilot on GitHub Actions (rejected for these reasons).
+
+### D21 — Pre-registration; Brief 01 is a feasibility probe only (2026-10-24)
+**Decision:** A pre-analysis plan is registered on OSF (embargo allowed) before any outcome
+data is pulled or computed, and mirrored in the repo. The plan locks:
+- the outcome definition (D3, including whether the within-user denominator is limited to
+  the user's reviews in the target language);
+- the genre rule (O4), including the placebo genre;
+- the language groups (D16) and the event window;
+- the specification, with event-study leads and lags;
+- the inference method for few clusters (wild-cluster bootstrap or randomization inference);
+- the prediction table (D18);
+- the robustness list (including the D15 proximity rule and an Elden Ring exclusion);
+- the Google Trends terms and translations (D10, D15).
+
+**Allowed before registration:** API behaviour, rate limits, counts of reviews and reviewers
+per language, and game metadata and tags. **Not allowed:** survival, cozy or placebo shares,
+or any genre-split review counts around Feb 2022. Brief 01 is therefore a feasibility probe
+only.
+**Sequence:** Brief 01 (feasibility) → genre rule from metadata (O4) → plan written and
+registered → Brief 02 (full pull and estimation).
+**Rationale:** many researcher choices could be tuned to the result; D2's standard; D10 and
+D15 already require pre-specification; OSF registration is the norm in this literature
+(Scrivner et al. posted data and code there). Deviations remain allowed if reported.
+**Alternatives considered:** plan committed only to the public repo (cheaper and
+timestamped, but git history can be rewritten); no pre-registration (rejected given D2).
+
 ---
 
 ## Open
@@ -289,11 +384,15 @@ Still open: bulk raw-corpus storage (LFS vs. Releases vs. external archive such 
 GitHub Actions scheduling vs. 6h job limits; incremental scrape strategy under Steam API
 rate limits; whether to seed history from an existing public reviews dump; R pipeline
 tooling (targets?).
+**Partly resolved:** by D19 (2026-10-24): raw data stays out of the public repo and Steam IDs
+are salted-hashed. Where raw data is stored privately is still open.
 
 ### O7 — Where pipeline execution physically runs
 Claude Code runs locally, which puts data transiently on the laptop — in tension with the
 no-local-files constraint. Options: (a) GitHub Actions runs the pipeline on schedule,
 Claude Code only authors code; (b) accept transient local runs.
+**Partly resolved:** by D20 (2026-10-24): the Brief 01 pilot runs locally; where the full
+pull runs is decided after the pilot.
 
 ### O8 — Feb 2022 event study: exposure groups & the Russia payment confound (new)
 The invasion shock hits Russian users through a second channel: sanctions and payment

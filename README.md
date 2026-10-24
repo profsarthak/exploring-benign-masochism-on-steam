@@ -4,11 +4,17 @@ Why do people love survival crafting games — and why are studios releasing so 
 
 ## Theory
 
-A single causal cascade:
+Motivating hypothesis, a single causal cascade:
 
 > rising global doom → coping via benign masochism → increased consumption of
 > survival/apocalyptic games → survival crafting releases unusually successful →
 > more studios enter → accelerating release rate
+
+What the paper claims (DECISIONS.md, D17): a salient doom shock shifts gamers' reviewing
+toward survival games relative to comparable gamers and to cozy games; separately, survival
+hits pull in new releases. The full cascade is argued as an interpretation, not claimed as
+identified. The coping mechanism could be benign masochism (pleasure in safe negative
+affect) or simulation/practice; the design does not tell them apart (D9).
 
 ## Research architecture
 
@@ -17,9 +23,10 @@ a full-chain IV was rejected):
 
 1. **Demand stage** — does doom shift consumption? Individual-level outcome: within-user
    survival review share, built from Steam's public review endpoint. Identification: Feb 2022
-   Ukraine-invasion event study (headline) plus a user-FE / time-FE panel with the
-   Caldara–Iacoviello GPR index (support), survival share contrasted against cozy games as
-   the control genre (DECISIONS.md, D9–D10).
+   Ukraine-invasion event study (headline) comparing threatened-but-safe language groups
+   with distant ones (D16), plus a user-FE / time-FE panel with doom indices (support;
+   D10, D15). Survival and cozy shares are estimated separately against a pre-registered
+   prediction table, with a placebo genre (D18, D21).
 2. **Supply stage** — does success drive entry? Genre-level panel and/or breakout-hit
    event studies (DECISIONS.md, O3).
 
@@ -32,8 +39,8 @@ a full-chain IV was rejected):
 ├── AI_USAGE.md        # sIfA AI-transparency log (CRediT roles + session log)
 ├── briefs/            # implementation briefs: one spec per analysis task
 ├── data/
-│   ├── raw/           # as-pulled API data (see data/README.md for size rules)
-│   └── processed/     # cleaned, merged analysis datasets
+│   ├── raw/           # as-pulled API data: local only, never committed (D19)
+│   └── processed/     # cleaned, pseudonymised analysis datasets
 ├── scripts/           # R pipeline (R only)
 └── outputs/           # figures and tables, regenerable from scripts + data
 ```
@@ -47,4 +54,5 @@ in a separate Drive folder, not here.
 
 ## Status
 
-Pre-data. Current deliverable: literature review. No pipeline runs yet.
+Pre-data. Literature first pass complete. Next: Brief 01 (feasibility probe only), then a
+pre-registered analysis plan (D21). No pipeline runs yet.

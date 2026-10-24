@@ -93,6 +93,13 @@ Code recommended a resolution for O8, which Monty accepted (D16), and set Status
 for the three gate papers at Monty's request. CRediT: no change. Methodology stays
 Extensive (AI proposed the exposure-group rule; Monty decided).
 
+### 2026-10-24 — Session 5, continued (Code): pre-Brief-01 decisions
+Code set out recommendations, with reasons and costs, for the five open items from the
+consistency check. Monty accepted all five (D17 claim scope, D18 cozy as rival prediction
+with a placebo genre, D19 data protection, D20 local pilot, D21 pre-registration). Code
+carried them into CLAUDE.md (data rules), README, data/README and .gitignore. CRediT: no
+change. Methodology stays Extensive (AI proposed; Monty decided).
+
 ### Meta-disclosure
 This sIfA log itself was drafted by AI (Cowork) from Busara's published descriptions of the
 tool, and reviewed by Monty — consistent with sIfA's own suggestion that AI may assist in

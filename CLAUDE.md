@@ -34,6 +34,13 @@ doing anything.
   (~200 requests / 5 min unofficial). Never assume a full-catalog pull fits in one run.
 - Every dataset in `data/` needs an entry in `data/README.md` (provenance, pull date,
   schema) at the time it is created, not later.
+- **The repo is public (D19).** Raw pulls stay in `data/raw/` (gitignored) and never enter
+  the repo. Steam IDs must be replaced with salted hashes before any data is committed; the
+  salt lives in `.env`, never in the repo or in logs. No review text in committed data.
+- **No peeking before pre-registration (D21).** Until the analysis plan is registered, do
+  not compute survival, cozy or placebo shares, or any genre-split review counts, around
+  Feb 2022. Feasibility work (API behaviour, rate limits, per-language counts, game
+  metadata) is fine.
 
 ## Workflow loop
 

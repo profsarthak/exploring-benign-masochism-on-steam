@@ -17,3 +17,6 @@ Thumbs.db
 .env
 *.pem
 *_token*
+
+# Raw data never committed: the repo is public (DECISIONS.md D19)
+data/raw/
